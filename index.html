@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página Web</title>
+
+
+    <style>
+
+
+header {
+    background-color: #6f7c59;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+
+nav {
+    background-color: #aeb79d;
+    padding: 9px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    width: 100%;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #6f7c59;
+    color: #000000;
+}
+
+
+article {
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.product {
+    flex: 0 0 calc(33.33% - 30px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.product h2 {
+    margin-top: 0;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #6f7c59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #aeb79d;
+}
+
+
+form {
+    margin-top: 30px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #6f7c59;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #aeb79d;
+}
+
+
+.btn-redirect {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+.btn-redirect a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #aeb79d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.btn-redirect a:hover {
+    background-color: #6f7c59;
+}
+
+
+footer {
+    background-color: #6f7c59;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    clear: both;
+}
+   
+    </style>
+    </head>
+
+
+
+
+<body>
+
+
+    <header>
+        <h1>Bem-vindo ao universo literário Dinair Book</h1>
+    </header>
+
+
+    <nav>
+        <a>Atendimento</a> |
+        <a>Lançamento</a> |
+        <a>Sobre a autora</a>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Romance</li>
+                <li>Superação</li>
+                <li>Espiritualidade</li>
+                <li>Auto Conhecimento</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <article>
+        <h1>Meu Primeiro Livro!!!!</h1>
+        <p>Em "As Extraordinárias Estações de uma Vida Comum", Gabriella Dinair nos conduz através de uma jornada reveladora, onde os dias mais simples se tornam repletos de propósito. Com uma mistura inspiradora de reflexões pessoais e insights espirituais, ela nos lembra que somos chamadas para viver de maneira extraordinária, enraizadas no propósito divino. <br/>
+
+
+            <br/>Com base nas Escrituras, Gabriella nos encoraja a abandonar padrões mundanos e abraçar os desígnios de Deus para nossas vidas. Ela nos lembra que, assim como as estações da natureza, nossas vidas passam por diferentes fases, cada uma com seu propósito e ensinamento transformando-se em oportunidades para descobrir o amor e a providência divina. <br/>
+
+
+            <br/>Esta obra será especialmente relevante para mulheres que desejam fortalecer sua espiritualidade encontrando um propósito mais profundo através de uma vida extraordinariamente comum.
+       
+        </p>
+    </article>
+
+
+    <div class="container">
+        <div class="product">
+            <img src="C:\Users\WORK\Downloads\Livro1.png" alt="Livro 3">
+            <h2>As extraordinárias estações de uma vida comum</h2>
+            <p>R$ 29,99</p>
+            <button class="btn" onclick="addToCart('As extraordinárias estações de uma vida comum', 29.99)">Adicionar ao carrinho</button>
+        </div>
+
+
+        <div class="product">
+            <img src="C:\Users\WORK\Downloads\Livro2.png" alt="Livro 2">
+            <h2>As extraordinárias estações de uma vida comum</h2>
+            <p>R$ 29,99</p>
+            <button class="btn" onclick="addToCart('As extraordinárias estações de uma vida comum', 29.99)">Adicionar ao carrinho</button>
+        </div>
+
+
+        <div class="product">
+            <img src="C:\Users\WORK\Downloads\Livro1.png" alt="Livro 3">
+            <h2>As extraordinárias estações de uma vida comum</h2>
+            <p>R$ 29,99</p>
+            <button class="btn" onclick="addToCart('As extraordinárias estações de uma vida comum', 29.99)">Adicionar ao carrinho</button>
+        </div>
+    </div>
+
+
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+    <div class="btn-redirect">
+        <a href="caminho_para_pagina_principal_da_empresa.html">Visite nosso site principal</a>
+    </div>
+
+
+    <footer>
+        <p>Dinair Book</p>
+    </footer>
+</body>
+</html>
